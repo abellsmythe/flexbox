@@ -1,0 +1,26 @@
+{
+  "name": "flexbox",
+  "version": "0.1.0",
+  "description": "Grid flebox CSS3",
+  "style": "src/flexbiox.css",
+  "main": "src/flexbiox.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abellsmythe/flexbox.git"
+  },
+  "keywords": [
+    "browser",
+    "flexbox",
+    "grid",
+    "css"
+  ],
+  "author": "@dam",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/abellsmythe/flexbox/issues"
+  },
+  "homepage": "https://github.com/abellsmythe/flexbox"
+}
