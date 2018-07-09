@@ -1,11 +1,24 @@
 :root {
     --primary-color:#007FFF;
-    --secondary-color:#0066CC;
+    --secondary-color:#0044BA;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background: #EEE;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper { 
+    width: 100%;
+    margin: 0;
+    background: #FFF;
+}
+
+.wrapper .row {
+    margin: 0;
+    min-height: 100vh;
 }
 
 .title {
@@ -14,17 +27,17 @@ body {
 
 h1.title {
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 1.4rem;
 }
 
 h2.title {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.4rem;
 }
 
-.btn {
+a.btn {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
@@ -44,8 +57,25 @@ h2.title {
     transition: all ease 300ms;
 }
 
-.btn:hover {
-    background: var(--secondary-color, #0066CC);
+a.btn:hover {
+    background: var(--secondary-color, #0044BA);
+    color: #FFF;
+}
+
+a {
+    padding: 0 0 .2rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+    transition: all ease 300ms;
+}
+
+a:hover {
+    color: var(--primary-color, #007FFF);
+}
+
+a.copyright {
+    font-family: 'Gaegu', cursive;
 }
 
 .full-body {
@@ -56,7 +86,7 @@ h2.title {
 .row-colored {
     margin: 5px;
     padding: 5px;
-    background: var(--secondary-color, #0066CC);
+    background: var(--secondary-color, #0044BA);
 }
 
 .col {
@@ -75,7 +105,7 @@ h2.title {
 }
 
 .box.high-color {
-    background: var(--secondary-color, #0066CC);
+    background: var(--secondary-color, #0044BA);
 }
 
 
