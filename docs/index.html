@@ -4,84 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Flexbox | Grid CSS3</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <link rel="stylesheet" href="../src/flexbox.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .title {
-            color: #001A33;
-        }
-
-        h1.title {
-            font-size: 6rem;
-            font-weight: 400;
-            line-height: 1.4rem;
-        }
-
-        h2.title {
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: 1.4rem;
-        }
-
-        .full-body {
-            min-height: 100vh;
-            min-width: 100vw;
-        }
-
-        .col {
-            padding: 0.5rem inherit;
-        }
-
-        .box {
-            padding: 5px;
-            background: #007FFF;
-            color: #FFF;
-            text-align: center;
-        }
-
-        pre {
-            overflow-x: auto;
-            padding: 1.85em;
-            border: 1px solid #E6E6E6;
-            border-left-width: 1px;
-            border-left-width: 5px;
-            margin: 1.6em 0;
-            font-size: .875em;
-            background: #FCFCFC;
-            white-space: pre;
-            word-wrap: normal;
-        }
-
-        code {
-            color: #007FFF;
-        }
-
-        code {
-            font-family: monospace,serif;
-            font-size: 1em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <div class="container">
+    <section class="container">
 
         <div class="row">
-          <div class="col center-xs">
-              <h1 class="title">Flexbox</h1>
-              <p>A grid system with Flexbox CSS3</p>
-          </div>
+            <div class="col center-xs">
+                <h1 class="title">Flexbox</h1>
+                <p>A grid system with Flexbox CSS3</p>
+                <div>
+                    <a class="btn" href="https://github.com/abellsmythe/flexbox/archive/v0.1.0.zip">Download</a>
+                    <a class="btn" href="https://github.com/abellsmythe/flexbox" target="_blank">Github</a>
+                </div>
+            </div>
         </div>
     
-    </div>
+    </section>
 
     <!-- Auto Width -->
-    <div class="container">
+    <section class="container">
 
         <div class="row">
             <div class="col start-xs">
@@ -92,22 +38,22 @@
 
         <div class="row">
             <div class="col">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
             <div class="col">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
             <div class="col">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
             <div class="col">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
         </div>
 
@@ -115,30 +61,30 @@
             <code>
                 &lt;div class="row"&gt;
                     &lt;div class="col"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                     &lt;div class="col"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                     &lt;div class="col"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;div class="row"&gt;
                     &lt;div class="col"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                     &lt;div class="col"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             </code>
         </pre>
         
-    </div>
+    </section>
 
     <!-- Responsive -->
-    <div class="container">
+    <section class="container">
 
         <div class="row">
             <div class="col start-xs">
@@ -149,13 +95,13 @@
 
         <div class="row">
             <div class="col xs-12 sm-8 md-6 lg-4">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
             <div class="col xs-12 sm-8 md-6 lg-4">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
             <div class="col xs-12 sm-8 md-6 lg-4">
-                <div class="box">Box</div>
+                <div class="box"></div>
             </div>
         </div>
 
@@ -163,22 +109,22 @@
             <code>
                 &lt;div class="row"&gt;
                     &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                     &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                     &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             </code>
         </pre>
         
-    </div>
+    </section>
 
     <!-- Offset -->
-    <div class="container">
+    <section class="container">
 
         <div class="row">
             <div class="col start-xs">
@@ -188,78 +134,409 @@
         </div>
 
         <div class="row">
-            <div class="col xs-offset-11">
-                <div class="box">Box</div>
+            <div class="col xs-1 xs-offset-11">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-10">
-                <div class="box">Box</div>
+            <div class="col xs-2 xs-offset-10">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-9">
-                <div class="box">Box</div>
+            <div class="col xs-3 xs-offset-9">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-8">
-                <div class="box">Box</div>
+            <div class="col xs-4 xs-offset-8">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-7">
-                <div class="box">Box</div>
+            <div class="col xs-5 xs-offset-7">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-6">
-                <div class="box">Box</div>
+            <div class="col xs-6 xs-offset-6">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-5">
-                <div class="box">Box</div>
+            <div class="col xs-7 xs-offset-5">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-4">
-                <div class="box">Box</div>
+            <div class="col xs-8 xs-offset-4">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-3">
-                <div class="box">Box</div>
+            <div class="col xs-9 xs-offset-3">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-2">
-                <div class="box">Box</div>
+            <div class="col xs-10 xs-offset-2">
+                <div class="box"></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col xs-offset-1">
-                <div class="box">Box</div>
+            <div class="col xs-11 xs-offset-1">
+                <div class="box"></div>
             </div>
         </div>
 
         <pre>
             <code>
                 &lt;div class="row"&gt;
-                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;div class="col xs-1 xs-offset-11"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
-                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;div class="col xs-2 xs-offset-10"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
-                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
-                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;div class="col xs-3 xs-offset-9"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    . . .
+                &lt;/div&gt;
+            </code>
+        </pre>
+        
+    </section>   
+    
+    <!-- Alignment -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Alignment</h2>
+                <p>Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column.</p>
+            </div>
+        </div>
+
+        <!-- Start -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Start</h3>
+            </div>
+        </div>
+        <div class="row row-colored start-xs">
+            <div class="col xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row start-xs"&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <!-- Center -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Center</h3>
+            </div>
+        </div>
+        <div class="row row-colored center-xs">
+            <div class="col xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row center-xs"&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <!-- End -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">End</h3>
+            </div>
+        </div>
+        <div class="row row-colored end-xs">
+            <div class="col xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row end-xs"&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <!-- Top -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Top</h3>
+            </div>
+        </div>
+        <div class="row top-xs">
+            <div class="col xs-6">
+                <div class="box box-high"></div>
+            </div>
+            <div class="col xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row top-xs"&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box box-high"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <!-- Middle -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Middle</h3>
+            </div>
+        </div>
+        <div class="row middle-xs">
+            <div class="col xs-6">
+                <div class="box box-high"></div>
+            </div>
+            <div class="col xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row middle-xs"&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box box-high"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <!-- Bottom -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Bottom</h3>
+            </div>
+        </div>
+        <div class="row bottom-xs">
+            <div class="col xs-6">
+                <div class="box box-high"></div>
+            </div>
+            <div class="col xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row bottom-xs"&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box box-high"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-6"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
             </code>
         </pre>
         
-    </div>    
+    </section>
+
+    <!-- Distribution -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Distribution</h2>
+                <p>Add classes to distribute the contents of a row or column.</p>
+            </div>
+        </div>
+
+        <!-- Around -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Around</h3>
+            </div>
+        </div>
+        <div class="row row-colored around-xs">
+            <div class="col xs-2">
+                <div class="box"></div>
+            </div>
+            <div class="col xs-2">
+                <div class="box"></div>
+            </div>
+            <div class="col xs-2">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row around-xs"&gt;
+                    &lt;div class="col xs-2"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-2"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-2"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <!-- Between -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Between</h3>
+            </div>
+        </div>
+        <div class="row row-colored between-xs">
+            <div class="col xs-2">
+                <div class="box"></div>
+            </div>
+            <div class="col xs-2">
+                <div class="box"></div>
+            </div>
+            <div class="col xs-2">
+                <div class="box"></div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row between-xs"&gt;
+                    &lt;div class="col xs-2"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-2"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-2"&gt;
+                        &lt;div class="box"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        
+    </section>
+
+    <!-- Reordering -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Reordering</h2>
+            </div>
+        </div>
+
+        <!-- First -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">First</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="box">1</div>
+            </div>
+            <div class="col">
+                <div class="box">2</div>
+            </div>
+            <div class="col first-xs">
+                <div class="box high-color">3</div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row"&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;2&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col first-xs"&gt;
+                        &lt;div class="box"&gt;3&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+
+        <!-- Last -->
+        <div class="row">
+                <div class="col start-xs">
+                <h3 class="title">Last</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col last-xs">
+                <div class="box high-color">1</div>
+            </div>
+            <div class="col">
+                <div class="box">2</div>
+            </div>
+            <div class="col">
+                <div class="box">3</div>
+            </div>
+        </div>
+        <pre>
+            <code>
+                &lt;div class="row"&gt;
+                    &lt;div class="col last-xs"&gt;
+                        &lt;div class="box"&gt;1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;2&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;3&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        
+    </section>
+
+    <!-- Reversing -->
+    <section class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Reversing</h2>
+            </div>
+        </div>
+
+        <div class="row reverse">
+            <div class="col">
+                <div class="box">1</div>
+            </div>
+            <div class="col">
+                <div class="box">2</div>
+            </div>
+            <div class="col">
+                <div class="box">3</div>
+            </div>
+        </div>
+
+        <pre>
+            <code>
+                &lt;div class="row reverse"&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;2&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;3&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        
+    </section>
 
 </body>
 </html>
