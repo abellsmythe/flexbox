@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link rel="stylesheet" href="../src/flexbox.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .title {
+            color: #001A33;
+        }
+
+        h1.title {
+            font-size: 6rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+        }
+
+        h2.title {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.4rem;
+        }
+
+        .full-body {
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+
+        .col {
+            padding: 0.5rem inherit;
+        }
+
+        .box {
+            padding: 5px;
+            background: #007FFF;
+            color: #FFF;
+            text-align: center;
+        }
+
+        pre {
+            overflow-x: auto;
+            padding: 1.85em;
+            border: 1px solid #E6E6E6;
+            border-left-width: 1px;
+            border-left-width: 5px;
+            margin: 1.6em 0;
+            font-size: .875em;
+            background: #FCFCFC;
+            white-space: pre;
+            word-wrap: normal;
+        }
+
+        code {
+            color: #007FFF;
+        }
+
+        code {
+            font-family: monospace,serif;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row">
+          <div class="col center-xs">
+              <h1 class="title">Flexbox</h1>
+              <p>A grid system with Flexbox CSS3</p>
+          </div>
+        </div>
+    
+    </div>
+
+    <!-- Auto Width -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Auto Width</h2>
+                <p>Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="box">Box</div>
+            </div>
+            <div class="col">
+                <div class="box">Box</div>
+            </div>
+            <div class="col">
+                <div class="box">Box</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="box">Box</div>
+            </div>
+            <div class="col">
+                <div class="box">Box</div>
+            </div>
+        </div>
+
+        <pre>
+            <code>
+                &lt;div class="row"&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        
+    </div>
+
+    <!-- Responsive -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Responsive</h2>
+                <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md & lg viewport widths. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xs-12 sm-8 md-6 lg-4">
+                <div class="box">Box</div>
+            </div>
+            <div class="col xs-12 sm-8 md-6 lg-4">
+                <div class="box">Box</div>
+            </div>
+            <div class="col xs-12 sm-8 md-6 lg-4">
+                <div class="box">Box</div>
+            </div>
+        </div>
+
+        <pre>
+            <code>
+                &lt;div class="row"&gt;
+                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        
+    </div>
+
+    <!-- Offset -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col start-xs">
+                <h2 class="title">Offset</h2>
+                <p>Offset a column.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xs-offset-11">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-10">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-9">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-8">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-7">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-6">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-5">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-4">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-3">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-2">
+                <div class="box">Box</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col xs-offset-1">
+                <div class="box">Box</div>
+            </div>
+        </div>
+
+        <pre>
+            <code>
+                &lt;div class="row"&gt;
+                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col xs-12 sm-8 md-6 lg-4"&gt;
+                        &lt;div class="box"&gt;Box&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        
+    </div>    
+
+</body>
+</html>
