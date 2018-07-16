@@ -40,6 +40,13 @@ Responsive modifiers enable specifying different column sizes, offsets, alignmen
 </div>
 ```
 
+| Key  | Media Query | Applies |
+| ------------- | ------------- | ------------- |
+| none | none  | always |
+| sm | @media screen and (min-width: 48em)  | ≥ 768px |
+| md | @media screen and (min-width: 64em)  | ≥ 1024px |
+| lg | @media screen and (min-width: 75em)  | ≥ 1200px |
+
 ### Offset
 
 Offset a column.
