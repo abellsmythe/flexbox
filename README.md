@@ -1,5 +1,6 @@
 # Flexbox
 Grid flebox CSS3
+[Documentation](http://abellsmythe.me/flexbox/)
 
 ## Grid
 The grid is a 12-column fluid grid, that shrinks with the browser/device at smaller sizes. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. 
